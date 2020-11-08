@@ -12,7 +12,8 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class DetailComponent extends BaseComponent implements OnInit {
 
-  public ProductDetail: any=[];
+  public ProductDetail: any;
+  public ProductMenu1: any=[];
 
 
   //@ViewChild(FileUpload, { static: false }) file_image: FileUpload;
@@ -21,16 +22,21 @@ export class DetailComponent extends BaseComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.refserProList();
+    this.refserProDetail();
 
   }
-  refserProList()
+  refserProDetail()
   {
-    this.ProductDetail=[];
+    this.ProductDetail={};
+    this.ProductMenu1=[];
     this._route.params.subscribe(params => {
       let id = params['idpro'];
+      let idmenu = params['idmenu'];
       this._api.get('/api/product/get-pro-id/'+id).pipe(takeUntil(this.unsubscribe)).subscribe((data: any) => {
         this.ProductDetail = data;
+      });
+      this._api.get('/api/product/get-5-menu-pro/'+idmenu).pipe(takeUntil(this.unsubscribe)).subscribe((data: any) => {
+        this.ProductMenu1 = data;
       });
     });
   }

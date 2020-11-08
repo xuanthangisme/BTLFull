@@ -23,7 +23,7 @@ export const mainRoutes: Routes = [
         component: ClassifyComponent,
       },
       {
-        path: 'detail/:idpro',
+        path: 'detail/:idpro/:idmenu',
         component: DetailComponent,
       },
 
