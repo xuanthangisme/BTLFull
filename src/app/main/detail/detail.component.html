@@ -1,0 +1,129 @@
+ <section class="container">
+ <section class="cod-md-3">
+        <div id="quangcao-right">
+          <p>
+            <a href="#"><img alt="" src="assets/frontend/images/bando2.jpg" style="width: 190px;"></a>
+          </p>
+          <div class="quangcao-right">
+            <span>HỖ TRỢ - ZALO</span>
+          </div>
+          <p style="text-align: center;">
+            <span style="font-size:26px;"><strong><span style="color:#ff0000;">0967594691</span></strong>
+          </span>
+        </p>
+        <div class="box">
+          <div class="box-heading"><span>SỰ KIỆN</span></div>
+          <div class="box-content">
+            <div class="box-product-left">
+              <div style="padding-bottom: 25px;">
+                <div class="image"><a href="tintuc.html"><img src="http://ymsgundam.com/image/cache/data/hinhsp/bandai/hg/hgbuildstrike_boxart-700x700.jpg" style="float: left; padding-right: 10px; " alt="Hàng mới về ngày 01-11-2013" width="60" height="60"></a></div>
+                <div class="name"><a href="tintuc.html" style="font-size: 15px;color: red;">Hàng mới về ngày 01-11-2018</a></div>
+
+                GundamShop vừa về một đợt mới, danh sách các mặt hàng như sau:
+              </div>
+              <div style="padding-bottom: 25px;">
+                <div class="image"><a href="tintuc.html"><img src="http://ymsgundam.com/image/cache/data/hinhsp/bandai/mg/mgprotozero_boxart-700x700.jpg" style="float: left; padding-right: 10px; " alt="Hàng mới về ngày 14-11-2013" width="60" height="60"></a></div>
+                <div class="name"><a href="tintuc.html" style="font-size: 15px;color: red;">Hàng mới về ngày 14-11-2018</a></div>
+
+                GundamShop vừa về một đợt mới, danh sách các mặt hàng như sau:
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="col-md-10">
+<div *ngFor ="let detail of ProductDetail">
+    <div class="tendiachi">
+			<a [routerLink]="['']">Trang chủ</a>
+                  » <a >{{detail.namePD}}</a>
+				</div>
+				<div class="left" style="width: 35%">
+                     <div class="image" >
+			         <a class="fancybox"><img src="" title="" ></a>
+
+                     </div>
+                 </div>
+                 <div class="right">
+  <div id="tabs" class="htabs">
+  <a class="info selected" href="#tab-information" style="display: inline;">Thông tin sản phẩm</a>
+  <!--Go bo hien thi Tab Description
+  <a href="#tab-description">Mô tả</a>-->
+
+  </div>
+  <div id="tab-information" class="tab-content" style="display: block;">
+
+
+	<p>
+	<span style="color:#ff0000;"><strong><span style="font-size:30px;"></span></strong></span></p>
+
+
+
+   <div class="description">
+		        		<span>Kích cỡ / Loại: </span> <a href="#"></a> | <a href="#">Size </a> |<br>
+        <span>Nhà sản xuất:</span> <a href="#">Producer</a><br>
+                <span>Mã sản phẩm:</span>namePro<br>
+
+        <span>Tình trạng:</span>
+
+
+        </div>
+        <form action="" method="POST">
+
+            <div class="price">
+
+                <br> <span class="gia2"></span>
+
+                              </div>
+
+                  <div class="cart">
+        <div>Số lượng:<input type="number" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
+          <input type="hidden" name="product_id" size="2" value="ID">
+          &nbsp;<button id="button-cart" type="submit" class="button" title="Add to Cart"><strong>Thêm giỏ hàng</strong></button>&nbsp;&nbsp;
+        </div>
+
+      </div>
+    </form>
+         <div class="tags"><b>Tag:</b>
+
+        <a href=""></a>,<a href="">name</a>
+
+      </div>
+
+  </div>
+</div>
+  </div>
+  <div class="clearfix">
+   <a class="stylechuthich1 col-md-2" href="">SP Liên Quan <i class="glyphicon glyphicon-chevron-right" aria-hidden=""></i></a>
+
+ </div>
+  <section id="sanpham1">
+          <div class="danhsachSP1">
+            <div class="row">
+
+              <div class="col-md-2">
+
+                <form action="" method="POST">
+
+                <div class="thumbnail">
+                  <a href="">
+                    <span class="ghim-top" style="background-color:#3BB9FF;color:#FFF;font-weight:bold;padding: 5px 6px;position: absolute; text-align: center;">NEW</span>
+                    <img src="public/upload/imageProduct/" alt="" width="120px"  title="">
+                  </a>
+                  <div class="name1"><a href="" style="overflow:hidden;text-overflow: ellipsis;height: 27px;"></a></div>
+                  <div class="gia1">
+                    <span class="giamoi1"></span>
+                  </div>
+                  <input type="hidden" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
+                   <input type="hidden" name="product_id" size="2" value="">
+
+                  <button style="padding-right: 13px;height: 28px;" type="submit" class="button" title="Add to Cart" style="background-color:#eb5858;margin-top:13px;font-weight:bold;font-size: 15px;color: white;line-height: 1;padding: 5px;">Thêm giỏ hàng</button>
+                </div>
+                </form>
+
+              </div>
+
+            </div>
+          </div>
+    </section>
+</section>

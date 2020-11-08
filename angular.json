@@ -90,7 +90,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/jquery/jquery.min.js",
+              "../node_modules/popper.js/dist/umd/popper.min.js",
+      "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ]
           }
         },
         "lint": {
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "BTLFull"
+    }
+  },
+  "defaultProject": "BTLFull",
+  "cli": {
+    "analytics": "9ca4368e-ebef-4354-bdff-50d34c661622"
+  }
 }

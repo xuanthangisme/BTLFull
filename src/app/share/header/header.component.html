@@ -1,0 +1,29 @@
+<header class="container">
+      <p align="right"><span class="glyphicon glyphicon-envelope"></span> Email: <a href="https://mail.google.com/mail/u/1/?pli=1#inbox?compose=new">nhangnhit99@gmail.com</a></p>
+      <div class="navbar-header">
+        <a id="logo" class="navbar-brand" href="">
+         GunDamShop<small>.Com</small>
+          <!-- <img src="{{('/frontend/images/logo1.png')}}" width=450px> -->
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse link">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a style="font-weight: bold; font-size: 15px; font-family: 'Tahoma'" href="">Trang chủ</a></li>
+          <li><a style="font-weight: bold; font-size: 15px; font-family: 'Tahoma'" href="">Giỏ hàng</a></li>
+          <li><a style="font-weight: bold; font-size: 15px; font-family: 'Tahoma'" href="">Thanh toán</a></li>
+          <li><a style="font-weight: bold; font-size: 15px; font-family: 'Tahoma'" href="">Hướng dẫn mua hàng</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </header>
+    <header class="container">
+      <nav>
+        <ul *ngFor="let menu of MenuList">
+          <li><a [routerLink]="['/classify',menu.iDmenu]">{{menu.nameMenu}}</a>
+          </li>
+        </ul>
+      </nav>
+    </header >
+    <header class="container">
+    </header>
+

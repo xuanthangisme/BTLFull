@@ -1,0 +1,198 @@
+
+     <div class="container">
+      <div class="row">
+       <div class="col-md-12">
+        <div id="carousel-id" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+          <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+          <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item">
+           <img alt="First slide" src="assets/frontend/images/banner3.jpg" width="100%">
+         </div>
+         <div class="item">
+           <img  alt="Second slide" src="assets/frontend/images/banner1.jpg" width="100%">
+         </div>
+         <div class="item active">
+           <img  alt="Third slide" src="assets/frontend/images/banner2.jpg" width="100%">
+         </div>
+       </div>
+       <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+       <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+     </div>
+   </div>
+ </div>
+</div>
+
+<section id="sanpham">
+  <div class="container">
+
+   <div class="clearfix" >
+    <a  class="stylechuthich col-md-2" [routerLink]="['/classify/1']">Gundam BanDai <i class="glyphicon glyphicon-chevron-right" aria-hidden=""></i></a>
+    <div class="line-title col-md-9"></div>
+
+  </div>
+  <div class="danhsachSP">
+    <div  class="row">
+     <div *ngFor="let item of ProductMenuList1" class="col-md-3">
+       <form action="" method="POST">
+      <div class="thumbnail">
+       <a [routerLink]="['/detail',item.iDproduct]">
+
+        <img src="{{item.img}}" alt="" width="80%" title="{{item.namePD}}">
+      </a>
+      <div class="name"><a href="detail/{{item.iDproduct}}" style="overflow:hidden;text-overflow: ellipsis;height: 27px;">{{item.namePD}}</a></div>
+      <input type="hidden" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
+      <input type="hidden" name="product_id" size="2" value="ID_RPro">
+      <div class="gia">
+        <span class="giamoi">{{item.price}}</span>
+      </div>
+      <div style="padding-left: 37px;">
+        <button  style="background-color:#eb5858;margin-top:13px;font-weight:bold;font-size: 15px;color: white;line-height: 1;padding: 5px;" align="center" type="submit" class="button" title="Add to Cart">Thêm giỏ hàng</button>
+      </div>
+    </div>
+  </form>
+  </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+<section id="sanpham">
+  <div class="container">
+
+   <div class="clearfix" >
+    <a  class="stylechuthich col-md-2" [routerLink]="['/classify/2']">Gundam China <i class="glyphicon glyphicon-chevron-right" aria-hidden=""></i></a>
+    <div class="line-title col-md-9"></div>
+
+  </div>
+  <div class="danhsachSP">
+    <div  class="row">
+     <div *ngFor="let item1 of ProductMenuList2" class="col-md-3">
+       <form action="" method="POST">
+      <div class="thumbnail">
+       <a [routerLink]="['/detail',item1.iDproduct]">
+
+        <img src="{{item1.img}}" alt="" width="80%" title="{{item1.namePD}}">
+      </a>
+      <div class="name"><a href="detail/{{item1.iDproduct}}" style="overflow:hidden;text-overflow: ellipsis;height: 27px;">{{item1.namePD}}</a></div>
+      <input type="hidden" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
+      <input type="hidden" name="product_id" size="2" value="ID_RPro">
+      <div class="gia">
+        <span class="giamoi">{{item1.price}}</span>
+      </div>
+      <div style="padding-left: 37px;">
+        <button  style="background-color:#eb5858;margin-top:13px;font-weight:bold;font-size: 15px;color: white;line-height: 1;padding: 5px;" align="center" type="submit" class="button" title="Add to Cart">Thêm giỏ hàng</button>
+      </div>
+    </div>
+  </form>
+  </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+<section id="sanpham">
+  <div class="container">
+
+   <div class="clearfix" >
+    <a  class="stylechuthich col-md-2" [routerLink]="['/classify/3']">Đấu Sĩ LBX <i class="glyphicon glyphicon-chevron-right" aria-hidden=""></i></a>
+    <div class="line-title col-md-9"></div>
+
+  </div>
+  <div class="danhsachSP">
+    <div  class="row">
+     <div *ngFor="let item2 of ProductMenuList3" class="col-md-3">
+       <form action="" method="POST">
+      <div class="thumbnail">
+       <a [routerLink]="['/detail',item2.iDproduct]">
+
+        <img src="{{item2.img}}" alt="" width="80%" title="{{item2.namePD}}">
+      </a>
+      <div class="name"><a href="detail/{{item2.iDproduct}}" style="overflow:hidden;text-overflow: ellipsis;height: 27px;">{{item2.namePD}}</a></div>
+      <input type="hidden" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
+      <input type="hidden" name="product_id" size="2" value="ID_RPro">
+      <div class="gia">
+        <span class="giamoi">{{item2.price}}</span>
+      </div>
+      <div style="padding-left: 37px;">
+        <button  style="background-color:#eb5858;margin-top:13px;font-weight:bold;font-size: 15px;color: white;line-height: 1;padding: 5px;" align="center" type="submit" class="button" title="Add to Cart">Thêm giỏ hàng</button>
+      </div>
+    </div>
+  </form>
+  </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+<section id="sanpham">
+  <div class="container">
+
+   <div class="clearfix" >
+    <a  class="stylechuthich col-md-2" [routerLink]="['/classify/4']">Phụ Kiện <i class="glyphicon glyphicon-chevron-right" aria-hidden=""></i></a>
+    <div class="line-title col-md-9"></div>
+
+  </div>
+  <div class="danhsachSP">
+    <div  class="row">
+     <div *ngFor="let item3 of ProductMenuList4" class="col-md-3">
+       <form action="" method="POST">
+      <div class="thumbnail">
+       <a [routerLink]="['/detail',item3.iDproduct]">
+
+        <img src="{{item3.img}}" alt="" width="80%" title="{{item3.namePD}}">
+      </a>
+      <div class="name"><a href="detail/{{item3.iDproduct}}" style="overflow:hidden;text-overflow: ellipsis;height: 27px;">{{item3.namePD}}</a></div>
+      <input type="hidden" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
+      <input type="hidden" name="product_id" size="2" value="ID_RPro">
+      <div class="gia">
+        <span class="giamoi">{{item3.price}}</span>
+      </div>
+      <div style="padding-left: 37px;">
+        <button  style="background-color:#eb5858;margin-top:13px;font-weight:bold;font-size: 15px;color: white;line-height: 1;padding: 5px;" align="center" type="submit" class="button" title="Add to Cart">Thêm giỏ hàng</button>
+      </div>
+    </div>
+  </form>
+  </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+<section id="sanpham">
+  <div class="container">
+
+   <div class="clearfix" >
+    <a  class="stylechuthich col-md-2" [routerLink]="['/classify/5']">Công Cụ <i class="glyphicon glyphicon-chevron-right" aria-hidden=""></i></a>
+    <div class="line-title col-md-9"></div>
+
+  </div>
+  <div class="danhsachSP">
+    <div  class="row">
+     <div *ngFor="let item4 of ProductMenuList5" class="col-md-3">
+       <form action="" method="POST">
+      <div class="thumbnail">
+       <a [routerLink]="['/detail',item4.iDproduct]">
+
+        <img src="{{item4.img}}" alt="" width="80%" title="{{item4.namePD}}">
+      </a>
+      <div class="name"><a href="detail/{{item4.iDproduct}}" style="overflow:hidden;text-overflow: ellipsis;height: 27px;">{{item4.namePD}}</a></div>
+      <input type="hidden" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
+      <input type="hidden" name="product_id" size="2" value="ID_RPro">
+      <div class="gia">
+        <span class="giamoi">{{item4.price}}</span>
+      </div>
+      <div style="padding-left: 37px;">
+        <button  style="background-color:#eb5858;margin-top:13px;font-weight:bold;font-size: 15px;color: white;line-height: 1;padding: 5px;" align="center" type="submit" class="button" title="Add to Cart">Thêm giỏ hàng</button>
+      </div>
+    </div>
+  </form>
+  </div>
+ </div>
+ </div>
+ </div>
+ </section>
+

@@ -1,0 +1,103 @@
+<section class="container">
+      <section class="cod-md-3">
+        <div id="quangcao-right">
+          <p>
+            <a href="#"><img alt="" src="assets/frontend/images/bando2.jpg" style="width: 190px;"></a>
+          </p>
+          <div class="quangcao-right">
+            <span>HỖ TRỢ - ZALO</span>
+          </div>
+          <p style="text-align: center;">
+            <span style="font-size:26px;"><strong><span style="color:#ff0000;">0967594691</span></strong>
+          </span>
+        </p>
+        <div class="box">
+          <div class="box-heading"><span>SỰ KIỆN</span></div>
+          <div class="box-content">
+            <div class="box-product-left">
+              <div style="padding-bottom: 25px;">
+                <div class="image"><a href="tintuc.html"><img src="http://ymsgundam.com/image/cache/data/hinhsp/bandai/hg/hgbuildstrike_boxart-700x700.jpg" style="float: left; padding-right: 10px; " alt="Hàng mới về ngày 01-11-2013" width="60" height="60"></a></div>
+                <div class="name"><a href="tintuc.html" style="font-size: 15px;color: red;">Hàng mới về ngày 01-11-2018</a></div>
+
+                GundamShop vừa về một đợt mới, danh sách các mặt hàng như sau:
+              </div>
+              <div style="padding-bottom: 25px;">
+                <div class="image"><a href="tintuc.html"><img src="http://ymsgundam.com/image/cache/data/hinhsp/bandai/mg/mgprotozero_boxart-700x700.jpg" style="float: left; padding-right: 10px; " alt="Hàng mới về ngày 14-11-2013" width="60" height="60"></a></div>
+                <div class="name"><a href="tintuc.html" style="font-size: 15px;color: red;">Hàng mới về ngày 14-11-2018</a></div>
+
+                GundamShop vừa về một đợt mới, danh sách các mặt hàng như sau:
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="col-md-10">
+			<div  class="tendiachi">
+				<a [routerLink]="['']">Trang chủ</a>
+
+				» <a href=""></a>
+
+			</div>
+
+			<div>
+				<p style="font-size: 14px;color: #333;">
+					<br>
+				</p>
+			</div>
+
+				<div class="product-filter">
+					<div class="display"><b>Hiển thị:</b> <span> / HG 1/144 </span></div>
+					<div class="limit"><b>Loại BanDai:</b>
+						<select>
+							<option value="">HG 1/144 </option>
+							<option value="">RG 1/144 </option>
+							<option value="">MG 1/100</option>
+							<option value="">BB - SD</option>
+							<option value="">PG 1/60</option>
+						</select>
+					</div>
+					<div class="sort"><b>Sắp xếp theo:</b>
+						<select>
+							<option value="">Mặc định</option>
+							<option value="">Tên (A - Z)</option>
+							<option value="">Tên (Z - A)</option>
+							<option value="">Giá (Thấp &gt; Cao)</option>
+							<option value="">Giá (Cao &gt; Thấp)</option>
+							<option value="">Đánh giá (Cao nhất)</option>
+							<option value="">Đánh giá (Thấp nhất)</option>
+							<option value="">Kiểu (A - Z)</option>
+							<option value="">Kiểu (Z - A)</option>
+						</select>
+					</div>
+				</div>
+
+				<section id="sanpham1">
+					<div class="danhsachSP1">
+						<div class="row">
+
+							<div *ngFor ="let class of ProductClassify" class="col-md-2">
+								 <form action="" method="POST">
+
+								<div class="thumbnail">
+									<a [routerLink]="['/detail',class.iDproduct]">
+										<img src="{{class.img}}" alt="" width="120px"  title="{{class.namePD}}">
+									</a>
+									<div class="name1"><a [routerLink]="['/detail',class.iDproduct]" style="overflow:hidden;text-overflow: ellipsis;height: 27px;">{{class.namePD}}</a></div>
+									<div class="gia1">
+										<span class="giamoi1">{{class.price}}</span>
+									</div>
+									 <input type="hidden" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
+                                     <input type="hidden" name="product_id" size="2" value="">
+                                     <div style="padding-left: 15px;">
+									<button  style="background-color:#eb5858;margin-top:13px;font-weight:bold;font-size: 15px;color: white;line-height: 1;padding: 5px;" align="center" type="submit" class="button" title="Add to Cart">Thêm giỏ hàng</button>
+									</div>
+								</div>
+							</form>
+							</div>
+
+
+						</div>
+
+					</div>
+		</section>
