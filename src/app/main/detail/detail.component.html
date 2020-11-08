@@ -73,7 +73,7 @@
 
             <div class="price">
 
-                <br> <span class="gia2">{{ProductDetail.price}}</span>
+                <br> <span class="gia2">{{(ProductDetail.price | currency: " ").replace('.00',' ')}} VNĐ</span>
 
                               </div>
 
