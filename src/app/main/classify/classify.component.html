@@ -85,7 +85,7 @@
 									</a>
 									<div class="name1"><a [routerLink]="['/detail',class.iDproduct]" style="overflow:hidden;text-overflow: ellipsis;height: 27px;">{{class.namePD}}</a></div>
 									<div class="gia1">
-										<span class="giamoi1">{{class.price}}</span>
+										<span class="giamoi1">{{(class.price | currency: " ").replace('.00',' ')}} VNĐ</span>
 									</div>
 									 <input type="hidden" name="quantity" class="w30" size="2" value="1" style="width: 50px;">
                                      <input type="hidden" name="product_id" size="2" value="">
